@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-
+console.log(process.env.REACT_APP_PUBLIC_KEY);
 const Contact = () => {
   const [details, setDetails] = useState({ name: "", email: "", message: "" });
 
@@ -12,7 +12,12 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .send("service_1ucj7ms", "template_gn1tso5", details, "YgRlGfr5byoi2MjAE")
+      .send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        details,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
       .then(
         () => {
           console.log("SUCCESS");
