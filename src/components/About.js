@@ -7,13 +7,13 @@ const About = () => {
       className="w-full h-fit bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+        <div className="pb-4">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
         </div>
 
-        <p className="text-xl mt-20">
+        <p className="text-xl">
           Hello! My name is Syamsundar Chegu, and I hail from Lingasamudram. I
           graduated in 2023 with a degree in Electronics and Communication
           Engineering. Prior to that, I completed my intermediate education at
