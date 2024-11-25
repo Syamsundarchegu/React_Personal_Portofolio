@@ -43,7 +43,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className=" bg-gradient-to-b from-black to-gray-500 w-full text-white md:h-fit"
+      className=" bg-gradient-to-b from-black to-gray-500 w-full text-white h-full"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pd-8">
@@ -52,17 +52,20 @@ const Portfolio = () => {
           </p>
           <p className="py-6">Check out some of my work right here</p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-5">
           {portfolios.map(({ id, src, href }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div
+              key={id}
+              className="shadow-lg shadow-gray-600 rounded-lg flex flex-col items-center  gap-1 h-fit"
+            >
               <img
                 src={src}
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 object-contain"
                 alt=""
               />
-              <div className="flex items-center justify-center">
+              <div className="">
                 <a
-                  className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
+                  className="duration-200 hover:scale-105"
                   target="_blank"
                   href={href}
                   rel="noreferrer"
