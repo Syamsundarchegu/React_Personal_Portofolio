@@ -8,12 +8,12 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 "
+      className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800 pt-20 pb-10"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row gap-4">
         <div className="flex flex-col justify-center md:w-1/2 w-[95%]">
           <ReactTyped
-            className="text-white text-2xl md:text-4xl lg:text-5xl font-semibold "
+            className="text-white text-2xl lg:text-5xl font-semibold "
             strings={[
               "ML Engineer",
               "Full Stack Developer",
@@ -46,7 +46,11 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col items-center md:w-1/2 w-full ">
-          <img src={HeroImage} alt="my profile" className="rounded-2xl w-[45%]" />
+          <img
+            src={HeroImage}
+            alt="my profile"
+            className="rounded-2xl w-[45%]"
+          />
         </div>
       </div>
     </div>

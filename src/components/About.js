@@ -39,7 +39,7 @@ const About = () => {
             Education
           </p>
         </div>
-        <div className="display flex md:flex-row md:justify-between flex-col pt-4 md:gap-0 gap-5">
+        <div className="display flex md:flex-row md:justify-between flex-col pt-4 gap-4">
           {education.map(
             ({
               id,
